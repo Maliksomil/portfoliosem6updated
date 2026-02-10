@@ -11,23 +11,30 @@
             font-family: 'Segoe UI', sans-serif;
             background-color: #0f172a;
             color: #f1f5f9;
+            scroll-behavior: smooth;
         }
 
         header {
             background: linear-gradient(90deg, #0ea5e9, #2563eb);
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 38px;
+        }
+
+        header p {
+            margin: 8px 0;
         }
 
         nav {
             text-align: center;
             padding: 15px;
             background-color: #1e293b;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
@@ -42,29 +49,35 @@
         }
 
         section {
-            padding: 40px 10%;
+            padding: 50px 10%;
         }
 
         h2 {
             border-left: 5px solid #0ea5e9;
             padding-left: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .card {
             background-color: #1e293b;
-            padding: 20px;
+            padding: 25px;
             margin-bottom: 20px;
             border-radius: 8px;
-            transition: 0.3s;
+            transition: 0.3s ease;
         }
 
         .card:hover {
             background-color: #334155;
+            transform: translateY(-5px);
         }
 
         ul {
             line-height: 1.8;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
         }
 
         .btn {
@@ -72,8 +85,9 @@
             padding: 10px 20px;
             background-color: #0ea5e9;
             color: white;
-            text-decoration: none;
             border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
             margin-top: 10px;
         }
 
@@ -85,10 +99,7 @@
             text-align: center;
             padding: 20px;
             background-color: #1e293b;
-        }
-
-        a {
-            color: #38bdf8;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -98,10 +109,7 @@
 <header>
     <h1>Somil Malik</h1>
     <p>Cyber Security Student | Ethical Hacking | Cloud Security</p>
-    <p>
-        📧 msomil0020@gmail.com |
-        📱 +91-9517733900
-    </p>
+    <p>📧 msomil0020@gmail.com | 📱 +91-9517733900</p>
     <p>
         <a href="https://linkedin.com/in/somil-malik/" target="_blank">LinkedIn</a> |
         <a href="https://github.com/Maliksomil" target="_blank">GitHub</a>
@@ -123,8 +131,8 @@
     <div class="card">
         <p>
             Motivated Cyber Security student with strong interest in network security,
-            ethical hacking, and cloud technologies. Passionate about building secure systems
-            and identifying vulnerabilities in real-world environments.
+            ethical hacking, vulnerability assessment, and cloud technologies.
+            Passionate about building secure systems and solving real-world security challenges.
         </p>
     </div>
 </section>
@@ -134,10 +142,10 @@
     <div class="card">
         <ul>
             <li><strong>Programming:</strong> C, C++, Python</li>
-            <li><strong>Web:</strong> HTML, CSS, Bootstrap</li>
+            <li><strong>Web Technologies:</strong> HTML, CSS, Bootstrap</li>
             <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, CI/CD, Git, GitHub</li>
-            <li><strong>Cyber Security:</strong> OWASP Top 10, Network Security Concepts</li>
-            <li><strong>Soft Skills:</strong> Leadership, Team Player, Adaptability</li>
+            <li><strong>Cyber Security:</strong> OWASP Top 10, Network Security, Reverse Shell Concepts</li>
+            <li><strong>Soft Skills:</strong> Leadership, Problem-Solving, Adaptability, Team Player</li>
         </ul>
     </div>
 </section>
@@ -147,14 +155,19 @@
 
     <div class="card">
         <h3>Deepfake Detector (Apr 2025)</h3>
-        <p>AI-based deepfake detection using PyTorch and OpenCV with Flask backend.</p>
+        <p>
+            AI-based deepfake video detection system using PyTorch and OpenCV.
+            Integrated Flask backend and deployed real-time analysis pipeline.
+        </p>
         <a href="https://aisentinel.in" target="_blank">Live Project</a> |
         <a href="https://github.com/Maliksomil" target="_blank">GitHub</a>
     </div>
 
     <div class="card">
         <h3>Wi-Fi Deauther Tool (Feb 2025)</h3>
-        <p>Python-based cybersecurity auditing tool for authorized wireless testing.</p>
+        <p>
+            Python-based cybersecurity auditing tool developed for authorized wireless testing environments.
+        </p>
         <a href="https://github.com/Maliksomil" target="_blank">GitHub Repository</a>
     </div>
 </section>
@@ -166,11 +179,18 @@
         <p>Duration: 12 Weeks</p>
         <p>Score: 61%</p>
         <p>Certificate ID: NPTEL25CS107S1458701176</p>
+
+        <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs107/Course/NPTEL25CS107S145870117610884507.pdf" 
+           target="_blank" 
+           class="btn">
+           View NPTEL Certificate
+        </a>
     </div>
 </section>
 
 <section id="education">
     <h2>Education</h2>
+
     <div class="card">
         <p><strong>B.Tech – Computer Science & Engineering</strong></p>
         <p>Lovely Professional University, Punjab</p>
@@ -207,12 +227,12 @@
         <p><strong>Name:</strong> Somil Malik</p>
         <p><strong>Section:</strong> K23NV | <strong>Roll No:</strong> 55</p>
         <p><strong>Registration No:</strong> 12314465</p>
-        <p><strong>Course:</strong> B.Tech CSE</p>
-        <p><strong>University:</strong> Lovely Professional University</p>
         <p><strong>Email:</strong> msomil0020@gmail.com</p>
         <p><strong>Mobile:</strong> +91-9517733900</p>
 
-        <a href="Somil_CV.pdf" class="btn" download>Download CV</a>
+        <a href="Somil_CV.pdf" target="_blank" class="btn">
+            View / Download My CV
+        </a>
     </div>
 </section>
 
