@@ -24,11 +24,6 @@
             font-size: 36px;
         }
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-
         nav {
             text-align: center;
             padding: 15px;
@@ -65,7 +60,6 @@
         }
 
         .card:hover {
-            transform: scale(1.02);
             background-color: #334155;
         }
 
@@ -73,11 +67,24 @@
             line-height: 1.8;
         }
 
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e293b;
-            margin-top: 30px;
         }
 
         a {
@@ -90,7 +97,7 @@
 
 <header>
     <h1>Somil Malik</h1>
-    <p>Cyber Security Student | Ethical Hacking | Cloud & DevOps Enthusiast</p>
+    <p>Cyber Security Student | Ethical Hacking | Cloud Security</p>
     <p>
         📧 msomil0020@gmail.com |
         📱 +91-9517733900
@@ -108,28 +115,29 @@
     <a href="#certifications">Certifications</a>
     <a href="#education">Education</a>
     <a href="#achievements">Achievements</a>
+    <a href="#cv">CV</a>
 </nav>
 
 <section id="about">
     <h2>About Me</h2>
     <div class="card">
         <p>
-            I am a Cyber Security student passionate about ethical hacking, network security,
-            and cloud technologies. I focus on building secure systems, detecting vulnerabilities,
-            and implementing real-world cybersecurity solutions.
+            Motivated Cyber Security student with strong interest in network security,
+            ethical hacking, and cloud technologies. Passionate about building secure systems
+            and identifying vulnerabilities in real-world environments.
         </p>
     </div>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
+    <h2>Skills Summary</h2>
     <div class="card">
         <ul>
-            <li><strong>Languages:</strong> C, C++, Python</li>
-            <li><strong>Web Technologies:</strong> HTML, CSS, Bootstrap</li>
+            <li><strong>Programming:</strong> C, C++, Python</li>
+            <li><strong>Web:</strong> HTML, CSS, Bootstrap</li>
             <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, CI/CD, Git, GitHub</li>
-            <li><strong>Cyber Security:</strong> OWASP Top 10, Network Security, Reverse Shell Concepts</li>
-            <li><strong>Soft Skills:</strong> Leadership, Problem Solving, Adaptability, Teamwork</li>
+            <li><strong>Cyber Security:</strong> OWASP Top 10, Network Security Concepts</li>
+            <li><strong>Soft Skills:</strong> Leadership, Team Player, Adaptability</li>
         </ul>
     </div>
 </section>
@@ -139,25 +147,15 @@
 
     <div class="card">
         <h3>Deepfake Detector (Apr 2025)</h3>
-        <p>
-            AI-based deepfake video detection system using PyTorch and OpenCV.
-            Integrated Flask backend with real-time video analysis.
-        </p>
-        <p>
-            🔗 <a href="https://aisentinel.in" target="_blank">Live Project</a> |
-            <a href="https://github.com/Maliksomil" target="_blank">GitHub</a>
-        </p>
+        <p>AI-based deepfake detection using PyTorch and OpenCV with Flask backend.</p>
+        <a href="https://aisentinel.in" target="_blank">Live Project</a> |
+        <a href="https://github.com/Maliksomil" target="_blank">GitHub</a>
     </div>
 
     <div class="card">
         <h3>Wi-Fi Deauther Tool (Feb 2025)</h3>
-        <p>
-            Python-based cybersecurity auditing tool replicating scanning features
-            similar to airodump-ng. Built for authorized security testing environments.
-        </p>
-        <p>
-            🔗 <a href="https://github.com/Maliksomil" target="_blank">GitHub Repository</a>
-        </p>
+        <p>Python-based cybersecurity auditing tool for authorized wireless testing.</p>
+        <a href="https://github.com/Maliksomil" target="_blank">GitHub Repository</a>
     </div>
 </section>
 
@@ -165,31 +163,28 @@
     <h2>Certifications</h2>
     <div class="card">
         <h3>Cloud Computing – NPTEL (Jul–Oct 2025)</h3>
-        <p><strong>Duration:</strong> 12 Weeks</p>
-        <p><strong>Score:</strong> 61% (Elite Certificate)</p>
-        <p><strong>Credits:</strong> 3–4</p>
-        <p><strong>Certificate ID:</strong> NPTEL25CS107S1458701176</p>
+        <p>Duration: 12 Weeks</p>
+        <p>Score: 61%</p>
+        <p>Certificate ID: NPTEL25CS107S1458701176</p>
     </div>
 </section>
 
 <section id="education">
     <h2>Education</h2>
     <div class="card">
-        <p><strong>B.Tech - Computer Science & Engineering</strong></p>
+        <p><strong>B.Tech – Computer Science & Engineering</strong></p>
         <p>Lovely Professional University, Punjab</p>
         <p>CGPA: 7.15 | 2023 – Present</p>
     </div>
 
     <div class="card">
-        <p><strong>Intermediate (12th)</strong></p>
+        <p><strong>12th – 85%</strong></p>
         <p>S.D Senior Secondary School, Punjab</p>
-        <p>Percentage: 85%</p>
     </div>
 
     <div class="card">
-        <p><strong>Matriculation (10th)</strong></p>
+        <p><strong>10th – 74%</strong></p>
         <p>Delhi International School, Punjab</p>
-        <p>Percentage: 74%</p>
     </div>
 </section>
 
@@ -197,12 +192,27 @@
     <h2>Achievements & Activities</h2>
     <div class="card">
         <ul>
-            <li>Secured 8th Rank in HACK QUEST Hackathon (April 2024)</li>
-            <li>Solved 150+ DSA Problems – Neo Colab</li>
-            <li>Completed 150+ Python Problems – Code Tantra</li>
-            <li>Attended TechFluence 3.0 – LPU (Industry Interaction)</li>
-            <li>Volunteered in Tree Plantation Drive – Jalandhar NGO</li>
+            <li>8th Rank – HACK QUEST Hackathon (April 2024)</li>
+            <li>150+ DSA Problems Solved – Neo Colab</li>
+            <li>150+ Python Problems – Code Tantra</li>
+            <li>Attended TechFluence 3.0 – LPU</li>
+            <li>Volunteered – Tree Plantation Drive, Jalandhar</li>
         </ul>
+    </div>
+</section>
+
+<section id="cv">
+    <h2>Curriculum Vitae (CV)</h2>
+    <div class="card">
+        <p><strong>Name:</strong> Somil Malik</p>
+        <p><strong>Section:</strong> K23NV | <strong>Roll No:</strong> 55</p>
+        <p><strong>Registration No:</strong> 12314465</p>
+        <p><strong>Course:</strong> B.Tech CSE</p>
+        <p><strong>University:</strong> Lovely Professional University</p>
+        <p><strong>Email:</strong> msomil0020@gmail.com</p>
+        <p><strong>Mobile:</strong> +91-9517733900</p>
+
+        <a href="Somil_CV.pdf" class="btn" download>Download CV</a>
     </div>
 </section>
 
